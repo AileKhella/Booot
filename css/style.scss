@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+@import "bootstrap-grid.css";
+@import "bootstrap-reboot.css";
+@import "bootstrap.css";
+@import "owl.theme.default.css";
+@import "owl.carousel.css";
+
+%Inter{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+%Readex{
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+%Section{
+  max-width: 1294px;
+  margin: auto;
+}
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+.bg-light{
+
+}
+.navbar{
+  @extend %Section;
+  max-height: 21px;
+  padding: 15px 0;
+  margin: 15px 0;
+  .navbar-brand{
+
+  }
+  .navbar-collapse{
+    justify-content: center;
+    .navbar-nav{
+      min-width: 475px;
+      justify-content: space-between;
+      li{
+        a{
+          @extend %Inter;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .but_menu{
+    margin-left: 24px;
+    img{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+
+.carousel{
+  @extend %Section;
+  padding: 15px 0 25px;
+
+  .owl-carousel{
+    .owl-stage-outer{
+      .owl-stage{
+        .owl-item{
+          article{
+            background-color: #DCE5E2;
+            border: none;
+            border-radius: 32px;
+            max-height: 647px;
+            .discr{
+              h1{
+                @extend %Readex;
+                font-size: 58px;
+                line-height: 70px;
+                margin-bottom: 20px}
+              p{
+                @extend %Inter;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 30px;
+              }
+              a{
+                @extend %Inter;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: capitalize;
+                display: inline-block;
+                border: solid 1px black;
+                border-radius: 200px;
+                padding: 14px 53px;
+
+              }
+            }
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+}

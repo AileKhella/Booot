@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+@import url(bootstrap-grid.css);
+@import url(bootstrap-reboot.css);
+@import url(bootstrap.css);
+@import url(owl.theme.default.css);
+@import url(owl.carousel.css);
+.navbar .navbar-collapse .navbar-nav li a, .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p, .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black; }
+
+.carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black; }
+
+.navbar, .carousel {
+  max-width: 1294px;
+  margin: auto; }
+
+.navbar {
+  max-height: 21px;
+  padding: 15px 0;
+  margin: 15px 0; }
+  .navbar .navbar-collapse {
+    justify-content: center; }
+    .navbar .navbar-collapse .navbar-nav {
+      min-width: 475px;
+      justify-content: space-between; }
+      .navbar .navbar-collapse .navbar-nav li a {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase; }
+  .navbar .but_menu {
+    margin-left: 24px; }
+    .navbar .but_menu img {
+      width: 24px;
+      height: 24px; }
+
+.carousel {
+  padding: 15px 0 25px; }
+  .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article {
+    background-color: #DCE5E2;
+    border: none;
+    border-radius: 32px;
+    max-height: 647px; }
+    .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+      font-size: 58px;
+      line-height: 70px;
+      margin-bottom: 20px; }
+    .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 30px; }
+    .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      display: inline-block;
+      border: solid 1px black;
+      border-radius: 200px;
+      padding: 14px 53px; }
+    .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article img {
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
