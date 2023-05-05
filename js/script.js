@@ -5,7 +5,7 @@ $(document).ready(function() {
         nav: true,
         navText: ['', ' '],
         autoplay: true,
-        autoplayTimeout:4500,
+        autoplayTimeout:6000,
 
         responsive: {
             0: {
