@@ -4,59 +4,58 @@
 @import url(bootstrap.css);
 @import url(owl.theme.default.css);
 @import url(owl.carousel.css);
-.navbar .navbar-collapse .navbar-nav li a, .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p, .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+header .container .navbar .navbar-collapse .navbar-nav li a, .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p, .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: black; }
 
-.carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+.carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1, .latest_offers .container h3, .latest_offers .container p {
   font-family: 'Readex Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: black; }
 
-.navbar, .navbar-collapse.show .navbar-nav li a, .carousel {
+header .container, header .container .navbar-collapse.show .navbar-nav li a, .carousel .container, .latest_offers .container {
   max-width: 1294px;
   margin: auto; }
 
 /*header*/
-.navbar {
+header .container .navbar {
   max-height: 21px;
   padding: 15px 0;
   margin: 15px 0 30px; }
   @media screen and (max-width: 992px) {
-    .navbar {
+    header .container .navbar {
       justify-content: end; } }
-  .navbar .navbar-collapse {
+  header .container .navbar .navbar-collapse {
     justify-content: center; }
-    .navbar .navbar-collapse .navbar-nav {
+    header .container .navbar .navbar-collapse .navbar-nav {
       min-width: 475px;
       justify-content: space-between; }
-      .navbar .navbar-collapse .navbar-nav li a {
+      header .container .navbar .navbar-collapse .navbar-nav li a {
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase; }
       @media screen and (max-width: 429px) {
-        .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+        header .container .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
           text-align: end; } }
-  .navbar .but_menu {
+  header .container .navbar .but_menu {
     margin-left: 24px; }
-    .navbar .but_menu img {
+    header .container .navbar .but_menu img {
       width: 24px;
       height: 24px; }
-
-.navbar-collapse.show {
+header .container .navbar-collapse.show {
   justify-content: center;
   z-index: 10;
   background-color: white; }
-  .navbar-collapse.show .navbar-nav {
+  header .container .navbar-collapse.show .navbar-nav {
     min-width: 475px;
     justify-content: space-between; }
-    .navbar-collapse.show .navbar-nav li {
+    header .container .navbar-collapse.show .navbar-nav li {
       max-height: 40px;
       text-align: center; }
-      .navbar-collapse.show .navbar-nav li a {
+      header .container .navbar-collapse.show .navbar-nav li a {
         font-size: 20px;
         line-height: 22px;
         text-transform: uppercase; }
@@ -64,44 +63,65 @@
 /*S2 carusel*/
 .carousel {
   padding: 30px 0; }
-  .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article {
+  .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article {
     background-color: #DCE5E2;
     border: none;
     border-radius: 32px; }
-    @media screen and (max-width: 428px) {
-      .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article {
+    @media screen and (max-width: 429px) {
+      .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article {
+        background-color: transparent;
         background-image: url("/images/img1.png");
-        background-size: cover; } }
-    .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr {
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 100px 0 200px; } }
+    .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr {
       padding-left: 50px;
       margin: auto; }
       @media screen and (max-width: 992px) {
-        .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr {
+        .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr {
           padding-left: 30px; } }
-      .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+      @media screen and (max-width: 429px) {
+        .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr {
+          text-align: center; } }
+      .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
         font-size: 49px;
         line-height: 70px;
         margin-bottom: 20px; }
         @media screen and (max-width: 1200px) {
-          .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
             font-size: 40px;
             line-height: 50px;
             margin-bottom: 20px; } }
         @media screen and (max-width: 992px) {
-          .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
             font-size: 30px;
             line-height: 30px;
             margin-bottom: 15px; } }
-      .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
+        @media screen and (max-width: 429px) {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr h1 {
+            text-align: center;
+            font-size: 42px;
+            line-height: 44px;
+            text-shadow: 1px 1px white; } }
+      .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 30px; }
         @media screen and (max-width: 1200px) {
-          .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
             font-size: 14px;
             line-height: 17px;
             margin-bottom: 20px; } }
-      .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+        @media screen and (max-width: 429px) {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr p {
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 19px;
+            color: white;
+            text-shadow: 1px 1px #1d2124; } }
+      .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
         font-size: 18px;
         line-height: 22px;
         text-transform: capitalize;
@@ -110,19 +130,28 @@
         border-radius: 200px;
         padding: 14px 53px; }
         @media screen and (max-width: 1200px) {
-          .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
             font-size: 15px;
             line-height: 19px;
             padding: 7px 25px; } }
         @media screen and (max-width: 992px) {
-          .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
             font-size: 12px;
             line-height: 15px;
             padding: 7px 15px; } }
-    @media screen and (max-width: 428px) {
-      .carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item article img {
+        @media screen and (max-width: 429px) {
+          .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article .discr a {
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 14px 53px;
+            border: solid 2px white;
+            color: white;
+            text-shadow: 1px 1px #1d2124; } }
+    @media screen and (max-width: 429px) {
+      .carousel .container .owl-carousel .owl-stage-outer .owl-stage .owl-item article img {
         display: none; } }
-  .carousel .owl-nav .owl-prev {
+  .carousel .container .owl-nav .owl-prev {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -130,7 +159,7 @@
     width: 12px;
     background-image: url("/images/prev.png") !important;
     background-size: cover !important; }
-  .carousel .owl-nav .owl-next {
+  .carousel .container .owl-nav .owl-next {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -138,33 +167,85 @@
     width: 12px;
     background-image: url("/images/next.png") !important;
     background-size: cover !important; }
-  .carousel .owl-dots {
+  .carousel .container .owl-dots {
     position: absolute;
     bottom: 5%;
     left: 21%; }
     @media screen and (max-width: 1200px) {
-      .carousel .owl-dots {
+      .carousel .container .owl-dots {
         left: 29%; } }
     @media screen and (max-width: 992px) {
-      .carousel .owl-dots {
+      .carousel .container .owl-dots {
         left: 21%; } }
-    .carousel .owl-dots .owl-dot span {
+    @media screen and (max-width: 428px) {
+      .carousel .container .owl-dots {
+        display: none; } }
+    .carousel .container .owl-dots .owl-dot span {
       width: 194px;
       height: 2px;
       display: inline-block;
       background-color: #383d41;
       margin-right: 30px; }
       @media screen and (max-width: 1200px) {
-        .carousel .owl-dots .owl-dot span {
+        .carousel .container .owl-dots .owl-dot span {
           width: 120px; } }
-    .carousel .owl-dots .owl-dot.active span {
+    .carousel .container .owl-dots .owl-dot.active span {
       width: 194px;
       height: 2px;
       display: inline-block;
       background-color: black;
       margin-right: 30px; }
       @media screen and (max-width: 1200px) {
-        .carousel .owl-dots .owl-dot.active span {
+        .carousel .container .owl-dots .owl-dot.active span {
           width: 120px; } }
+
+/*latest offers*/
+.latest_offers .container {
+  padding: 45px 0; }
+  .latest_offers .container h3 {
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 9px; }
+  .latest_offers .container p {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 55px; }
+  .latest_offers .container .link_img {
+    display: flex;
+    flex-wrap: wrap; }
+    .latest_offers .container .link_img .link_img_l a {
+      display: block;
+      margin: auto;
+      padding-left: 15px; }
+      .latest_offers .container .link_img .link_img_l a:nth-child(1) {
+        max-height: 472px;
+        max-width: 639px; }
+      .latest_offers .container .link_img .link_img_l a:nth-child(2) {
+        max-height: 270px;
+        max-width: 639px; }
+    .latest_offers .container .link_img .link_img_r {
+      display: flex;
+      justify-content: space-between;
+      align-content: start;
+      margin-right: -15px; }
+      @media screen and (max-width: 992px) {
+        .latest_offers .container .link_img .link_img_r {
+          margin-right: 15px; } }
+      .latest_offers .container .link_img .link_img_r a {
+        display: block;
+        padding: 115px 0;
+        max-height: 792px;
+        max-width: 312px; }
+        .latest_offers .container .link_img .link_img_r a:nth-child(1) {
+          padding: 145px 0; }
+        .latest_offers .container .link_img .link_img_r a img {
+          display: block;
+          max-width: 300px; }
+
+.link_img a:hover {
+  transform: scale(1);
+  transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
