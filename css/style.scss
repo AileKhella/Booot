@@ -228,7 +228,7 @@ main{
           left: 29%;}
         @include max-screen(992px){
           left: 21%;}
-        @include max-screen(428px){
+        @include max-screen(429px){
           display: none;
         }
         .owl-dot{
@@ -260,6 +260,7 @@ main{
 
 /*latest offers*/
 .latest_offers{
+  box-sizing: border-box;
   .container{
     @extend %Section;
     padding: 45px 0;
@@ -280,41 +281,97 @@ main{
     .link_img{
       display: flex;
       flex-wrap: wrap;
+      @include max-screen(992px){
+        justify-content: center;
+
+      }
       .link_img_l{
 
         a{
-          display: block;
+          display: inline-block;
           margin: auto;
-          padding-left: 15px;
+
           &:nth-child(1){
+            padding: 0 40px;
             max-height:472px;
-            max-width: 639px;
+            max-width: 629px;
+            @include max-screen(1200px){
+              //max-height:450px;
+              //max-width: 600px;
+            }
+            @include max-screen(992px){
+
+            }
+            @include max-screen(429px){
+
+            }
             }
           &:nth-child(2){
+            padding: 0 40px;
+
             max-height:270px;
-            max-width:639px;}
+            max-width:629px;
+            @include max-screen(1200px) {
+              //  max-height:250px;
+              //  max-width: 600px;
+            }
+            @include max-screen(992px){
+
+              }
+            @include max-screen(429px){
+
+            }}
+          img{
+            display: inline-block;
+
+          }
       }
       }
       .link_img_r{
         display: flex;
         justify-content: space-between;
         align-content: start;
-        margin-right: -15px;
+
+        @include max-screen(1200px){
+
+        }
         @include max-screen(992px){
-          margin-right: 15px;
+
+        }
+        @include max-screen(429px){
+
         }
 
         a{
           display: block;
           padding: 115px 0;
           max-height:792px;
-          max-width: 312px;
+          max-width: 300px;
+          @include max-screen(1200px){
+
+          }
+          @include max-screen(992px){
+
+          }
+          @include max-screen(429px){
+
+          }
           &:nth-child(1){
             padding: 145px 0;
+            @include max-screen(1200px){
+
+            }
+            @include max-screen(992px){
+
+            }
+            @include max-screen(429px){
+
+            }
             }
           img{
-            display: block;
-            max-width: 300px;
+            display: inline-block;
+            max-width:300px;
+
           }
           }
         }
